@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  serilog-demo:
+    image: ${DOCKER_REGISTRY-}serilogdemo
+    build:
+      context: .
+      dockerfile: serilog-demo/Dockerfile
